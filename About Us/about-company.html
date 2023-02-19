@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="./assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/55268de170.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="navigationButtons">
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/images/logo.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="../index.html"><b>Home</b></a></li>
+                <li><a href="../Shop/shop.html"><b>Products</b></a></li>
+                <div class="dropdown">
+                    <li onclick="myFunction()" class="dropbtn"><b>About</b></li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">About Us</a>
+                        <a href="../About Us/about-company.html">About Company</a>
+                    </div>
+                </div>
+
+                <div class="loginButton">
+                    <!-- Button to open the modal login form -->
+                    <li class="loginuwu" onclick="document.getElementById('id01').style.display='block'"><b>Login</b></li>
+                    <!-- The Modal -->
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <!-- Modal Content -->
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                                <img src="../Homepage/assets/images/pussy.jpg" alt="Avatar" class="avatar">
+                            </div>
+                        
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                        
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                                <button class="loginbtn" type="submit">Login</button>
+                                <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                            </div>
+                        
+                            <div class="container" style="background-color:#091d26">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw"><a href="#"> Forgot password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!-- end nav -->
+    
+    <!-- main contents -->
+    <div class="main-contents-wrapper">
+        <div class="main-contents">
+            <h3 class="footer-header"><i class="fa-solid fa-users"></i>Follow us</h3>
+            <p class="footer-description">Social Media <br><br>
+                FB: TechDesk.PH <br>
+                IG: @TechDesk.PH
+            </p>
+            <h3 class="footer-header"><i class="fa-solid fa-envelope"></i>Contact Us</h3>
+            <p class="footer-description">Email/Number <br><br>
+                Gmail: TechDesk.PH@gmail.com <br>
+                Yahoo: TechDesk.PH@yahoo.com <br>
+                Cellphone: 0912 345 6789
+            </p>
+            <h3 class="footer-header"><i class="fa-solid fa-house"></i>Visit Us</h3>
+            <p class="footer-description">Address <br><br>
+                123 #A Technological Street <br>
+                Barangay Institute Quezon, City <br>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

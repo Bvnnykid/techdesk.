@@ -1,0 +1,180 @@
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(./font/Montserrat/static/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url(.);
+}
+
+:root {
+    --main-color: #1d1d1d;
+    --second-color: #3a3a3a;
+    --txt-color: #bbbbbb;
+    --txt-white: #ffffff;
+
+    --header-height: 144px;
+    --header-padding: 93px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--txt-color);
+    font-family: Montserrat-SemiBold, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 120px;
+    float: left;
+}
+
+header {
+    height: var(--header-height);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--header-padding);
+    z-index: 99;
+    transition: height 0.3s ease 0s;
+}
+
+header.shrink {
+    height: 60px;
+    background-color: var(--second-color);
+}
+
+.main-menu-wrapper {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.main-menu {
+    display: flex;
+    pointer-events: visible;
+}
+
+.main-menu > li > a {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: var(--txt-color);
+}
+
+.main-menu > li > a {
+    color: var(--txt-white);
+}
+
+.main-menu > li ~ li {
+    margin-left: 84px;
+}
+
+.main-menu > li > a:hover, 
+.user-menu > li > a:hover {
+    color: var(--txt-white);
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-menu > li > a > i {
+    font-size: 1.5rem;
+}
+
+.user-menu > li ~ li {
+    margin-left: 20px;
+}
+
+.hero {
+    height: 100vh;
+    padding-top: var(--header-height);
+    position: relative;
+}
+
+.starting-container {
+    height: 100%;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+}
+
+.content.active {
+    height: 100%;
+}
+
+.content-img {
+    width: 58%;
+    padding-right: 60px;
+    padding-top: 80px;
+    z-index: 1;
+}
+
+.content-img img{
+    width: 100%;
+}
+
+.content-txt {
+    width: 42%;
+    padding-left: 60px;
+}
+
+.content-title {
+    width: max-content;
+}
+
+.content-title > h3 {
+    font-size: 13.5rem;
+    font-family: BebasNeue-Regular;
+}
+
+.section {
+    padding: 12rem 0;
+}
+
+.section-content {
+    padding: 7rem 7rem 0;
+}
+
+.section-title {
+    font-family: BebasNeue-Regular;
+    text-align: center;
+    position: relative;
+}
+
+.section-title > h3 {
+    text-transform: uppercase;
+
+}
