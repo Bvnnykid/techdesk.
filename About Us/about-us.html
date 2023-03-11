@@ -1,119 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <!-- boxicons -->
-    <link rel="stylesheet" href="./assets/images/icons/boxicons-2.1.1/boxicons-2.1.1/css/boxicons.min.css">
-    <!-- app css -->
-    <link rel="stylesheet" href="./grid.css">
-    <link rel="stylesheet" href="./style3.css">
-    <script type="text/javascript" src="./assets/js/jsshop.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style3.css">
+    <script src="./assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/55268de170.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
+    <!-- nav -->
+    <nav>
+        <div class="navigationButtons">
+            <div class="logo">
+                <a href="../Homepage/main.html"><img src="../Homepage/assets/images/logo.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="../Homepage/main.html"><b>Home</b></a></li>
+                <li><a href="../Shop/shop.html"><b>Products</b></a></li>
+                <div class="dropdown">
+                    <li onclick="myFunction()" class="dropbtn"><b>About</b></li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="about-us.html">About Us</a>
+                        <a href="about-company.html">About Company</a>
+                    </div>
+                </div>
 
-    <!-- header -->
-    <header>
-        <a href="../index.html" class="logo">
-            <img src="./assets/images/icons/logo-white.png" alt="">
-        </a>
-        <div class="main-menu-wrapper">
-            <ul class="main-menu">
-                <li><a href="../index.html">home</a></li>
-                <li><a href="../Shop/shop.html">shop</a></li>
-                <li><a href="../About Us/about-us.html" class="active">about us</a></li>
+                <div class="loginButton">
+                    <!-- Button to open the modal login form -->
+                    <li class="loginuwu" onclick="document.getElementById('id01').style.display='block'"><b>Login</b></li>
+                    <!-- The Modal -->
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <!-- Modal Content -->
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                                <img src="../Homepage/assets/images/pussy.jpg" alt="Avatar" class="avatar">
+                            </div>
+                        
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                        
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                                <button class="loginbtn" type="submit">Login</button>
+                                <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                            </div>
+                        
+                            <div class="container" style="background-color:#091d26">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw"><a href="#"> Forgot password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
             </ul>
         </div>
-        <ul class="user-menu">
-            <li><a href="../Shop/shop.html"><i class='bx bx-shopping-bag'></i></a></li>
-        </ul>
-    </header>
-    <!-- end header -->
-
-   
+    </nav>
+    <!-- end nav -->
     
-    <div class="section">
-        <div class="col1">
-        <div class="section-title">
-            <h3>vision</h3>
-        </div>
-        <div class="slide-description">
-            <p>Our goal is to establish a phone case store as one of the leading stores in the smartphone retail market. 
-                Meet the needs of your customers, whether it's a phone case or a service. 
-                To be a first-rate service provider in e-commerce store development.</p>
-        </div>
-    </div>
-    </div>
-    <div class="section">
-    <div class="col1">
-        <div class="section-title">
-            <h3>mission</h3>
-        </div>
-        <div class="slide-description">
-            <p>Our goal is to establish a phone case store as one of the leading stores in the smartphone retail market. 
-                Meet the needs of your customers, whether it's a phone case or a service. 
-                To be a first-rate service provider in e-commerce store development.</p>
-        </div>
-    </div>
-    </div>
-</div>
-
-<div class="section">
-    <div class="col1">
-    <div class="section-title">
-        <h3>objectives</h3>
-    </div>
-    
-    <div class="slide-description">
-        <p>Our goal is to establish a phone case store as one of the leading stores in the smartphone retail market. 
-            Meet the needs of your customers, whether it's a phone case or a service. 
-            To be a first-rate service provider in e-commerce store development.</p>
-        </div>
-        </div>
-        </div>
-
-        <div class="section">
-
-        <div id="overlay">
-            <form>
-                <h1>
-
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Your Name">
-                    <small class='error'></small>
-                    
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" placeholder="Your Email">
-                    <small class='error'></small>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" placeholder="Your Message" rows="6"></textarea>
-                    <small class='error'></small>
-
-                    <div class="center">
-                        <input type="submit" value="Send Message">
-                        <p id="success"></p>
+    <!-- main contents -->
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <div class="'imgBx"><img src="assets/images/kyle.jpg"></div>
+                    <div class="contentBx">
+                        <h3> edi wow kalabaw<br><span>halaman</span></h3>
                     </div>
-                </h1>
-            </form>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="#"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="#"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="'imgBx"><img src="assets/images/karylle.jpg"></div>
+                    <div class="contentBx">
+                        <h3> edi wow kalabaw<br><span>halaman</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="#"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="#"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="'imgBx"><img src="assets/images/thirdy.jpg"></div>
+                    <div class="contentBx">
+                        <h3> edi wow kalabaw<br><span>halaman</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="#"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="#"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="'imgBx"><img src="assets/images/trisha.jpg"></div>
+                    <div class="contentBx">
+                        <h3> edi wow kalabaw<br><span>halaman</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="#"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="#"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+    
+       
+       
+       
         </div>
-    </div>
-</div>
+    </section>
 
-
-
-     
-    
-
-    
-
-    <!-- app js -->
-    <script src="./assets/js/app.js"></script>
+<!-- footer section -->
+    <footer>
+        <div class="section-content">
+            <div class="row">
+                <div class="col-1">
+                    <h3 class="footer-header"><i class="fa-solid fa-users"></i>Follow us</h3>
+                    <p class="footer-description">Social Media <br><br>
+                        FB: TechDesk.PH <br>
+                        IG: @TechDesk.PH
+                    </p>
+                    <ul class="socials">
+                        <li><a href="#"><i class="bx bxl-facebook-circle"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3 class="footer-header"><i class="fa-solid fa-envelope"></i>Contact Us</h3>
+                    <p class="footer-description">Email/Number <br><br>
+                        Gmail: TechDesk.PH@gmail.com <br>
+                        Yahoo: TechDesk.PH@yahoo.com <br>
+                        Cellphone: 0912 345 6789
+                    </p>
+                </div>
+                <div class="col-3">
+                    <h3 class="footer-header"><i class="fa-solid fa-house"></i>Visit Us</h3>
+                    <p class="footer-description">Address <br><br>
+                        123 #A Technological Street <br>
+                        Barangay Institute Quezon, City <br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
 
 </body>
-
 </html>
