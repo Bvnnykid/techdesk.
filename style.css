@@ -19,7 +19,7 @@
 }
 
 :root {
-    --main-color: #1d1d1d;
+    --main-color: #989e8b;
     --txt-color: #bbbbbb;
     --txt-white: #ffffff;
 }
@@ -206,7 +206,7 @@ nav .navigationButtons ul li a:hover {
 
 /*--- login ---*/
 body {
-  background: #1d1d1d;
+  background: #989e8b;
 }
 
 .btn-login {
@@ -307,7 +307,7 @@ body {
     text-transform: uppercase;
     padding: 10px 50px;
     background-color: var(--txt-white);
-    color: var(--main-color);
+    color: black;
     transition: transform 0.3s ease 0s;
 }
 
