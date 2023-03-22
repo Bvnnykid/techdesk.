@@ -14,9 +14,9 @@
 }
 
 :root {
-    --main-color: #1d1d1d;
+    --main-color: #989e8b;
     --second-color: #3a3a3a;
-    --txt-color: #bbbbbb;
+    --txt-color: white;
     --txt-white: #ffffff;
     --bg-black: #000;
 
@@ -174,10 +174,6 @@ header.shrink {
     display:block;
 }
 /*--- END DROPDOWN ---*/
-
-/*--- login ---*/
-
-/*--- end login ---*/
 /*--- end navigation bar ---*/
 
 .section {
@@ -364,39 +360,6 @@ header.shrink {
     bottom: -290px;
 }
 
-.news-card {
-    padding: 20px;
-}
-
-.news-card-img {
-    width: 100%;
-    padding-top: 100%;
-    position: relative;
-}
-
-.img-wrapper,
-.img-wrapper .img {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-}
-
-.img-wrapper .img {
-    background-position: center;
-    background-size: cover;
-    transition: transform 0.5s ease 0s;
-}
-
-.news-card:hover .img {
-    transform: scale(1.2);
-}
-
-.news-card-img,
-.news-title,
-.news-preview {
-    margin-bottom: 20px;
-}
-
 .news-title {
     font-size: 2rem;
     color: var(--txt-white);
@@ -426,25 +389,6 @@ footer {
 
 .socials > li > a:hover {
     color: var(--txt-white);
-}
-
-.footer-menu > li ~ li {
-    margin-top: 20px;
-}
-
-.footer-menu > li > a {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-}
-
-.footer-menu > li > a:hover {
-    color: var(--txt-white);
-}
-
-.subscribe-form > input {
-    border: none;
-    outline: none;
-    padding: 10px 20px;
 }
 
 .footer-header {
@@ -517,7 +461,7 @@ footer {
 
 img.shop-item-image
 {
-    width: 100px;
+    width: 200px;
     margin-top: 10px;
     height: auto;
 }
@@ -526,7 +470,7 @@ img.shop-item-image
 {
     border: 2px solid var(--txt-white);
     border-radius: 10px;
-    width: 250px;
+    width: 450px;
     height: auto;
     text-align: center;
     display: inline-block;
