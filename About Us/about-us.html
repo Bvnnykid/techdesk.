@@ -5,83 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- app css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="style3.css">
-    <script src="./assets/js/app.js"></script>
+    <script type="text/javascript" src="./assets/js/jsshop.js"></script>
     <script src="https://kit.fontawesome.com/55268de170.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- nav -->
-    <nav>
-        <div class="navigationButtons">
-            <div class="logo">
-                <a href="../Homepage/main.html"><img src="../Homepage/assets/images/logo.png" alt=""></a>
-            </div>
-            <ul>
-                <li><a href="../Homepage/main.html"><b>Home</b></a></li>
-                <li><a href="../Shop/shop.html"><b>Products</b></a></li>
-                <div class="dropdown">
-                    <li onclick="myFunction()" class="dropbtn"><b>About</b></li>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="about-us.html">About Us</a>
-                        <a href="about-company.html">About Company</a>
-                    </div>
-                </div>
 
-                <div class="loginButton">
-                    <!-- Button to open the modal login form -->
-                    <li class="loginuwu" onclick="document.getElementById('id01').style.display='block'"><b>Login</b></li>
-                    <!-- The Modal -->
-                    <div id="id01" class="modal">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        <!-- Modal Content -->
-                        <form class="modal-content animate" action="/action_page.php">
-                            <div class="imgcontainer">
-                                <img src="../Homepage/assets/images/pussy.jpg" alt="Avatar" class="avatar">
-                            </div>
-                        
-                            <div class="container">
-                                <label for="uname"><b>Username</b></label>
-                                <input type="text" placeholder="Enter Username" name="uname" required>
-                        
-                                <label for="psw"><b>Password</b></label>
-                                <input type="password" placeholder="Enter Password" name="psw" required>
-                        
-                                <button class="loginbtn" type="submit">Login</button>
-                                <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
-                            </div>
-                        
-                            <div class="container" style="background-color:#091d26">
-                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                                <span class="psw"><a href="#"> Forgot password?</a></span>
-                            </div>
-                        </form>
-                    </div>
-                    
-                    <script>
-                        // Get the modal
-                        var modal = document.getElementById('id01');
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal) {
-                                modal.style.display = "none";
-                            }
-                        }
-                    </script>
+<body>
+    <!-- header -->
+    <header>
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.png"></a>
+        <ul class="main-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Shop/shop.html" class="active">Products</a></li>
+            <div class="dropdown">
+                <li onclick="myFunction()" class="dropbtn"><b>About</b></li>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="about-us.html">About Us</a>
+                    <a href="../AboutUs/about-company.html">About Company</a>
                 </div>
-            </ul>
-        </div>
-    </nav>
-    <!-- end nav -->
+            </div>
+            <li><a href="../login.html"><b>Login</b></a></li>
+        </ul>
+    </header>
+    <!-- end header -->
+    
     
     <!-- main contents -->
+
+    <div class="sect">
+        <div class="sect-title"> 
+            <h3 class="second-title to-right show-on-scroll">ABOUT US</h3>
+            <h3 class="main-title to-left show-on-scroll">know our members</h3>
+        </div>
+    </div>
+
     <section>
         <div class="container">
             <div class="card">
                 <div class="content">
                     <div class="'imgBx"><img src="assets/images/kyle.jpg"></div>
                     <div class="contentBx">
-                        <h3> edi wow kalabaw<br><span>halaman</span></h3>
+                        <h3> Kyle Adrian Baniqued<br><span>CEO</span></h3>
                     </div>
                 </div>
                 <ul class="sci">
@@ -99,7 +66,7 @@
                 <div class="content">
                     <div class="'imgBx"><img src="assets/images/karylle.jpg"></div>
                     <div class="contentBx">
-                        <h3> edi wow kalabaw<br><span>halaman</span></h3>
+                        <h3> Karylle Buendia<br><span>FOUNDER</span></h3>
                     </div>
                 </div>
                 <ul class="sci">
@@ -117,7 +84,7 @@
                 <div class="content">
                     <div class="'imgBx"><img src="assets/images/thirdy.jpg"></div>
                     <div class="contentBx">
-                        <h3> edi wow kalabaw<br><span>halaman</span></h3>
+                        <h3> Edgardo Ocampo<br><span>FINANCE</span></h3>
                     </div>
                 </div>
                 <ul class="sci">
@@ -135,7 +102,7 @@
                 <div class="content">
                     <div class="'imgBx"><img src="assets/images/trisha.jpg"></div>
                     <div class="contentBx">
-                        <h3> edi wow kalabaw<br><span>halaman</span></h3>
+                        <h3> Trisha May Sarmiento<br><span>MANAGER</span></h3>
                     </div>
                 </div>
                 <ul class="sci">
@@ -149,18 +116,35 @@
                     </li>
                 </ul>
             </div>
-    
+            <div class="card">
+                <div class="content">
+                    <div class="'imgBx"><img src="assets/images/lord.jpg"></div>
+                    <div class="contentBx">
+                        <h3> Xander Lord<br><span>SALES</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="#"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="#"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
        
        
        
         </div>
     </section>
 
-<!-- footer section -->
+    <!-- footer section -->
     <footer>
         <div class="section-content">
             <div class="row">
-                <div class="col-1">
+                <div class="col-4">
                     <h3 class="footer-header"><i class="fa-solid fa-users"></i>Follow us</h3>
                     <p class="footer-description">Social Media <br><br>
                         FB: TechDesk.PH <br>
@@ -180,7 +164,7 @@
                         Cellphone: 0912 345 6789
                     </p>
                 </div>
-                <div class="col-3">
+                <div class="col-4">
                     <h3 class="footer-header"><i class="fa-solid fa-house"></i>Visit Us</h3>
                     <p class="footer-description">Address <br><br>
                         123 #A Technological Street <br>
@@ -193,5 +177,7 @@
     </footer>
     <!-- end footer section -->
 
+    <!--script-->
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

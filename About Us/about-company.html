@@ -5,96 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style3.css">
-    <script src="./assets/js/app.js"></script>
+    <!-- app css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="style4.css">
+    <script type="text/javascript" src="./assets/js/jsshop.js"></script>
     <script src="https://kit.fontawesome.com/55268de170.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- nav -->
-    <nav>
-        <div class="navigationButtons">
-            <div class="logo">
-                <a href="../Homepage/main.html"><img src="../Homepage/assets/images/logo.png" alt=""></a>
-            </div>
-            <ul>
-                <li><a href="../Homepage/main.html"><b>Home</b></a></li>
-                <li><a href="../Shop/shop.html"><b>Products</b></a></li>
-                <div class="dropdown">
-                    <li onclick="myFunction()" class="dropbtn"><b>About</b></li>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="about-us.html">About Us</a>
-                        <a href="about-company.html">About Company</a>
-                    </div>
-                </div>
 
-                <div class="loginButton">
-                    <!-- Button to open the modal login form -->
-                    <li class="loginuwu" onclick="document.getElementById('id01').style.display='block'"><b>Login</b></li>
-                    <!-- The Modal -->
-                    <div id="id01" class="modal">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        <!-- Modal Content -->
-                        <form class="modal-content animate" action="/action_page.php">
-                            <div class="imgcontainer">
-                                <img src="../Homepage/assets/images/pussy.jpg" alt="Avatar" class="avatar">
-                            </div>
-                        
-                            <div class="container">
-                                <label for="uname"><b>Username</b></label>
-                                <input type="text" placeholder="Enter Username" name="uname" required>
-                        
-                                <label for="psw"><b>Password</b></label>
-                                <input type="password" placeholder="Enter Password" name="psw" required>
-                        
-                                <button class="loginbtn" type="submit">Login</button>
-                                <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
-                            </div>
-                        
-                            <div class="container" style="background-color:#091d26">
-                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                                <span class="psw"><a href="#"> Forgot password?</a></span>
-                            </div>
-                        </form>
-                    </div>
-                    
-                    <script>
-                        // Get the modal
-                        var modal = document.getElementById('id01');
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal) {
-                                modal.style.display = "none";
-                            }
-                        }
-                    </script>
+<body>
+    <!-- header -->
+    <header>
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.png"></a>
+        <ul class="main-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Shop/shop.html" class="active">Products</a></li>
+            <div class="dropdown">
+                <li onclick="myFunction()" class="dropbtn"><b>About</b></li>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="about-us.html">About Us</a>
+                    <a href="../AboutUs/about-company.html">About Company</a>
                 </div>
-            </ul>
-        </div>
-    </nav>
-    <!-- end nav -->
+            </div>
+            <li><a href="../login.html"><b>Login</b></a></li>
+        </ul>
+    </header>
+    <!-- end header -->
+    
     
     <!-- main contents -->
+
+    <div class="sect">
+        <div class="sect-title"> 
+            <h3 class="second-title to-right show-on-scroll">ABOUT OUR COMPANY</h3>
+            <h3 class="main-title to-left show-on-scroll">know our members</h3>
+        </div>
+    </div>
+
     <div class="main-contents-wrapper">
         <div class="main-contents">
-            <h3 class="footer-header"><i class="fa-solid fa-users"></i>Follow us</h3>
-            <p class="footer-description">Social Media <br><br>
-                FB: TechDesk.PH <br>
-                IG: @TechDesk.PH
+            <p class="title">MISSION</p><br><br>
+            <p class="contents">    
+                To offer every form of computer hardware accessible on the IT market and to be the most customer-focused company in the <br>
+                Finally, it aims to mentor employees on how to work as a team, to make better use of time, <br>
+                and to learn useful skills like marketing, management, accounting, and equipment care & maintenance. <br>
+                It also aims to be the provider of high-quality services and solutions to any computer or IT problems in the region for <br>
+                delivering a consumer satisfaction by making stock available and providing high-quality service. <br><br><br>
             </p>
-            <h3 class="footer-header"><i class="fa-solid fa-envelope"></i>Contact Us</h3>
-            <p class="footer-description">Email/Number <br><br>
-                Gmail: TechDesk.PH@gmail.com <br>
-                Yahoo: TechDesk.PH@yahoo.com <br>
-                Cellphone: 0912 345 6789
-            </p>
-            <h3 class="footer-header"><i class="fa-solid fa-house"></i>Visit Us</h3>
-            <p class="footer-description">Address <br><br>
-                123 #A Technological Street <br>
-                Barangay Institute Quezon, City <br>
+            <p class="title">VISION</p> <br><br>
+            <p class="contents">    
+                To be the leader in Computer Hardware services by enabling our customers to achieve long-term <br>
+                products using our innovative and comprehensive IT products. <br>
             </p>
         </div>
     </div>
 
+    <!-- footer section -->
+    <footer>
+        <div class="section-content">
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="footer-header"><i class="fa-solid fa-users"></i>Follow us</h3>
+                    <p class="footer-description">Social Media <br><br>
+                        FB: TechDesk.PH <br>
+                        IG: @TechDesk.PH
+                    </p>
+                    <ul class="socials">
+                        <li><a href="#"><i class="bx bxl-facebook-circle"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3 class="footer-header"><i class="fa-solid fa-envelope"></i>Contact Us</h3>
+                    <p class="footer-description">Email/Number <br><br>
+                        Gmail: TechDesk.PH@gmail.com <br>
+                        Yahoo: TechDesk.PH@yahoo.com <br>
+                        Cellphone: 0912 345 6789
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h3 class="footer-header"><i class="fa-solid fa-house"></i>Visit Us</h3>
+                    <p class="footer-description">Address <br><br>
+                        123 #A Technological Street <br>
+                        Barangay Institute Quezon, City <br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
 
+    <!--script-->
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
